@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <main class="bg-gray-300 h-dvh">
+        <nav class="bg-lime-400 flex justify-around  items-center h-1/5 w-full">
+              <div class="name text-white text-xl">Weather-App Forecast</div>
+              <div class="github h-10 w-32 bg-gray-300 flex justify-center items-center rounded-lg text-white"><a href="https://github.com/Dilshad0raza" class="h-full w-full flex justify-center items-center">Github</a></div>
+        </nav>
+        <section class=" sec flex justify-center items-center w-full h-4/5">
+              <div class="bg-white p-1.5 w-4/5 flex justify-center">
+                   <div class="w-2/5">
+                       <input type="text" placeholder="search city....." id="inp" class="inp ml-2 bg-gray-300 w-4/5 h-9 pl-5 outline-none mb-10" >
+                      <button onclick="searchloc()" class="bg-slate-300 h-9 px-1">Search</button>
+                       <h1 class="text-center">OR</h1>
+                       
+                       <button   onclick="currloc()" class="bg-slate-300 h-9 w-full px-1 mt-10 mb-4">Your Location</button>
+                       <h1 class="text-center">OR</h1>
+                       
+                       <div class="drop h-10 w-auto bg-gray-300 flex justify-center items-center rounded-lg text-white">Recent Search : 
+                        <div class=" bg-gray-600 w-auto h-full text-black" id="recent"></div></div>
+
+                      </div>
+                      
+
+                   </div>
+                   <div class="w-3/5">
+                    <div class="data bg-slate-400 h-32 w-full">
+                           <div id="detail" class="flex justify-start items-center flex-col">
+                           </div>
+                           
+                    </div>
+                    <div class="temp flex justify-evenly flex-wrap mb-10 mt-10">
+                        <div class="day shadow-2xl h-40 w-28 flex justify-center items-center flex-col">
+                            <p><i class="fa-solid fa-cloud text-xl"></i></p>
+                             
+                        </div>
+                        <div class="day shadow-2xl h-40 w-28 flex justify-center items-center flex-col">
+                            <p><i class="fa-solid fa-cloud text-xl"></i></p>
+
+                        </div>
+
+                        <div class="day shadow-2xl h-40 w-28 flex justify-center items-center flex-col">
+                            <p><i class="fa-solid fa-cloud text-xl"></i></p>
+
+                        </div>
+
+                        <div class="day shadow-2xl h-40 w-28 flex justify-center items-center flex-col">
+                            <p><i class="fa-solid fa-cloud text-xl"></i></p>
+
+                        </div>
+
+                        <div class="day shadow-2xl h-40 w-28 flex justify-center items-center flex-col">
+                            <p><i class="fa-solid fa-cloud text-xl"></i></p>
+
+                        </div>
+
+                    </div>
+                   </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="weather.js">
+
+    </script>
+</body>
+</html>
